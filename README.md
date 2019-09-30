@@ -1,5 +1,9 @@
 # OffsetBuffers.jl
 
+## Installation
+]add https://github.com/sairus7/OffsetBuffers.jl.git
+
+## Description
 Buffer counts items pushed to the end and uses counted value as index for last buffered items.
 
 There are two types of `OffsetBuffers`:
