@@ -40,10 +40,10 @@ julia> firstindex(buf)
 julia> buf[3] # == first(buf)
 30
 
-julia> lastindex(buf) # == last(buf)
+julia> lastindex(buf)
 7
 
-julia> buf[7]
+julia> buf[7] # == last(buf)
 70
 
 ```
