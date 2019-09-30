@@ -1,7 +1,6 @@
 # OffsetBuffers.jl
-Array buffers with growing indexing for array data streams.
 
-Buffer counts items pushed to the end and uses counted value as index for last buffered data.
+Buffer counts items pushed to the end and uses counted value as index for last buffered items.
 
 There are two types of OffsetBuffers:
 - RollingBuffer - data items are stored in a circular fashion, same as CircularBuffer at DataStructures.jl package.
