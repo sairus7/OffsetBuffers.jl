@@ -10,7 +10,7 @@ There are two types of `OffsetBuffers`:
 - `RollingBuffer` - data items are stored in a circular fashion, same as CircularBuffer at DataStructures.jl package.
 - `SlidingBuffer` - data items are stored contigiously in memory from old to new, so you can always work with underlying array.
 
-Both types behave the same way, only diffeing in its internal representation.
+Both types behave the same way, only differing in its internal representation.
 
 ```julia
 julia> buf = RollingBuffer{Int}(5)
