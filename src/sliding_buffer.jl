@@ -141,6 +141,7 @@ end
     else # increase capacity, if not full
         buf.length += 1
     end
+    buf.offset -= 1
     if buf.first == 1 # shift data to the end
         copylen = buf.length - 1
         idst = 2

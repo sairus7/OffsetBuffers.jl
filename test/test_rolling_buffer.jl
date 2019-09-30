@@ -81,9 +81,9 @@
     @testset "Issue 379" begin
         buf = RollingBuffer{Int}(5)
         pushfirst!(buf, 1)
-        @test buf == [1]
+        @test convert(Array, buf) == [1]
         pushfirst!(buf, 2)
-        @test buf == [2, 1]
+        @test convert(Array, buf) == [2, 1]
     end
 
     @testset "empty!" begin

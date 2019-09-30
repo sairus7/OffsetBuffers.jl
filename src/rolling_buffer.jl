@@ -129,6 +129,7 @@ function Base.pushfirst!(buf::RollingBuffer, data)
     else
         buf.length += 1
     end
+    buf.offset -= 1
     buf.first = (buf.first <= 1 ? buf.capacity : buf.first - 1)
     buf.buffer[buf.first] = data
     buf
